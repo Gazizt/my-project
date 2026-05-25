@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+
+  web:
+    image: ubuntu:22.04
+    container_name: my-web
+    command: bash -c "echo 'Web server running!' && sleep 30"
+
+  database:
+    image: ubuntu:22.04
+    container_name: my-database
+    command: bash -c "echo 'Database running!' && sleep 30"
+
+  cache:
+    image: ubuntu:22.04
+    container_name: my-cache
+    command: bash -c "echo 'Cache running!' && sleep 30"
